@@ -5,13 +5,11 @@ import NavCompo from "./header/NavCompo";
 function LayOut(){
     return (
         <>
-        <NavCompo>
-        </NavCompo>
-        <Header/>
-        <main>
-           <Outlet/>
-        </main>
-        <Footer/>
+            <Header/>
+            <main>
+            <Outlet/>
+            </main>
+            {/* <Footer/> */}
         </>
     )
 }

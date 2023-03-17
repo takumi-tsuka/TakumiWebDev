@@ -4,9 +4,7 @@ function Header(){
     return(
         <>
             <header>
-                <section>
-
-                </section>
+                <NavCompo></NavCompo>
             </header>
         </>
     )
