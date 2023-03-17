@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-image: url("../img/682C7287-9A12-46E6-960E-B6EE57EB9E7A.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    color: whitesmoke;
+    
+}
+header section{
+    background-color: rgba(255, 255, 255, 0.632);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1%;
+}
+main i{
+    font-size: 25px;
+    color: black;
+}
+main i:hover{
+    font-size: 28px;
+    transition: .2s;
+    color: rgb(46, 43, 43);
+}
+
