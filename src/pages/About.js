@@ -40,7 +40,7 @@ function About(){
         }
     ];
     const select =(idx)=>{
-        console.log(idx);
+        // console.log(idx);
         setSk(idx);
     }
     return(
@@ -54,23 +54,63 @@ function About(){
                     <div className="container-fluid">
                         <h1>About me</h1>
                         <div className="container-fluid">
-                            
+                            <p>
+                                I have been to Canada for 8 months. I learned the knowledge about web development in Tamwood Careers as international student. I am actually a university student in Japan, studying materials engineering. I have experience in team web development and production in javscript frameworks such as  <strong>React, Vue.js, Angular</strong>. In addition, backend knowledge includes <strong>PHP and Node.js</strong>. <br/>I am familiar with both <strong>frontend</strong> and <strong>backend</strong>. I hope I can experience in web development and develop myself as web developer in Co-op. 
+                                I like taking a sauna, doing light exercise, and drinking coffee.
+                            </p>
+                            <small>
+                                I like taking a sauna, doing light exercise, and drinking coffee. 
+                            </small>
                         </div>
                     </div>
                 </div>
                 <div className="col-7">
                     <div className="container-fluid">
                         <h1>Skills</h1>
-                        <figure className="figure">
-                            {skills.map((skill,idx)=>
-                                <div key={idx}>
-                                    <img onClick={()=>select(idx)}  src={"../../../img/"+skill.img} className="figure-img img-fluid rounded" alt="html css" data-bs-toggle="modal" data-bs-target="#modalId"/>
-                                    <figcaption className="figure-caption text-start">{skill.name}</figcaption>
+                        <div className="container-fluid">
+                            <div className="container">  
+                                <div className="progress" style={{height: "30px"}}>
+                                    <div className="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style={{width: "95%"}}
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML & CSS</div>
                                 </div>
-                            )
-                            }
-                        </figure> 
-                        <ModalCompo />             
+                            </div>
+                            <div className="container">
+                                <div className="progress" style={{height: "30px"}}>
+                                    <div className="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style={{width: "100%"}}
+                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                                </div>
+                            </div>
+                            <div className="container">
+                                <div className="progress" style={{height: "30px"}}>
+                                    <div className="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style={{width: "100%"}}
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">React</div>
+                                </div>
+                            </div>
+                            <div className="container">
+                                <div className="progress" style={{height: "30px"}}>
+                                    <div className="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style={{width: "90%"}}
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Vue</div>
+                                </div>
+                            </div>
+                            <div className="container">
+                                <div className="progress" style={{height: "30px"}}>
+                                    <div className="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style={{width: "80%"}}
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Angular</div>
+                                </div>
+                            </div>
+                            <div className="container">
+                                <div className="progress" style={{height: "30px"}}>
+                                    <div className="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style={{width: "90%"}}
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                                </div>
+                            </div>
+                            <div className="container">
+                                <div className="progress" style={{height: "30px"}}>
+                                    <div className="progress-bar bg-primary progress-bar-striped progress-bar-animated" role="progressbar" style={{width: "85%"}}
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Node.js</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="container-fluid">
                         <h1>Educations</h1>
